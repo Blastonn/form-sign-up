@@ -9,6 +9,11 @@
       interpolate-size: allow-keywords;
     }
 }
+
+@font-face {
+    font-family: montserrat;
+    src: url(montserrat-regular-webfont.woff2);
+}
 body {
    line-height: 1.5;
    -webkit-font-smoothing: antialiased;
@@ -121,6 +126,7 @@ h2{
     display: flex;
     gap: 2rem;
     flex-wrap: wrap; 
+    padding: 25px;
   }
   
 .coluna {
@@ -135,5 +141,24 @@ h2{
 }
 
 label{
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    font-family: montserrat;
+    font-weight: 600;
+    padding: 5px;
+}
+input{
+    max-width: 300px;
+    border: 1px solid #E5E7EB;
+    font-family: montserrat;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+input[type *="password"]:invalid{
+    border: 1px solid red;
+}
+
+.button-form{
+    padding: 20px;
 }
