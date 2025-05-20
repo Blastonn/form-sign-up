@@ -23,49 +23,50 @@
             </p>
             <div class="container-form">
                 <h2>Cadastre-se!</h2>
+                <p id="info">Campos com (<strong>*</strong>) são obrigatorios.</p>
                 <form action=" " method="get">
                     <div class="form-grid">
                       
                       <div class="coluna">
                         <div class="campo">
                           <label for="first-name">FIRST NAME<strong><span>*</span></strong></label>
-                          <input type="text" name="first-name" id="first-name" placeholder="Felipe" required>
+                          <input type="text" name="first-name" id="first-name" tabindex="1" required>
                         </div>
                 
                         <div class="campo">
                           <label for="celular">CELULAR<strong><span>*</span></strong></label>
-                          <input type="text" name="num-celular" id="celular" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" placeholder="(DD) 9999-9999" required>
+                          <input type="text" name="num-celular" id="celular" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" tabindex="3" required>
                         </div>
                 
                         <div class="campo">
                           <label for="pwd">SENHA<strong><span>*</span></strong></label>
-                          <input type="password" name="pwd" id="pwd" required>
+                          <input type="password" name="pwd" id="pwd" tabindex="5" required>
                         </div>
                       </div>
                 
                       <div class="coluna">
                         <div class="campo">
                           <label for="last-name">SOBRENOME<strong><span>*</span></strong></label>
-                          <input type="text" name="last-name" id="last-name" placeholder="Ribeiro"  required>
+                          <input type="text" name="last-name" id="last-name" tabindex="2"  required>
                         </div>
 
                         <div class="campo">
                           <label for="email">EMAIL<strong><span>*</span></strong></label>
-                          <input type="email" name="email" id="email" placeholder="seuemail@hotmail.com" required>
+                          <input type="email" name="email" id="email" tabindex="4" required>
                         </div>
                 
                         <div class="campo">
                           <label for="confirm-pwd">CONFIRME SUA SENHA<strong><span>*</span></strong></label>
-                          <input type="password" name="confirm-pwd" id="confirm-pwd" required>
+                          <input type="password" name="confirm-pwd" id="confirm-pwd" tabindex="6" required>
                         </div>
                       </div>
                     </div>
         </div>
       <div class="button-form">
-        <button type="submit">sdasdasd</button>
+        <button type="submit">Criar conta</button>
       </div>
       </form>
-
+      <p>Você já tem uma conta? <a href="#">Entre aqui!</a></p>
     </div>
 </body>
 </html>
